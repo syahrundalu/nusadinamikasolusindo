@@ -1,4 +1,4 @@
-(function () {
+(function ($) {
 
 	'use strict'
 
@@ -54,7 +54,6 @@
 				controlsContainer: '#hero-nav',
 			});
 		}
-
 
 
 		if ( imgPropertySlider.length > 0 ) {
@@ -142,8 +141,6 @@
 			});
 		}
 
-		
-
 	}
 	tinyslier();
 
@@ -153,16 +150,3 @@
 	});
 
 })()
-
-// clients logo slider
-$('.client-logo-slider').slick({
-    infinite: true,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 1500,
-    arrows: false,
-    dots: false,
-    pauseOnHover: false,
-    
-  });
