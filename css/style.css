@@ -10287,3 +10287,65 @@ a {
   @media (max-width: 767.98px) {
     .colorlib-nav-toggle {
       right: 10px; } }
+
+      
+
+.social-icon li {
+  margin: 0 12px;
+}
+
+.social-icon li a {
+  height: 45px;
+  width: 45px;
+  background: #fff;
+  border-radius: 5px;
+  line-height: 45px;
+  display: block;
+  text-align: center;
+}
+      
+
+.social-icons {
+  position: relative;
+  z-index: 2;
+  margin-right: 50px;
+}
+.social-icons .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  height: 3rem;
+  width: 3rem;
+  color: #fff;
+  border-radius: 100rem;
+  background-color:#000;
+  transition: .3s ease-in-out;
+}
+
+.social-icons .btn:nth-child(1):hover {
+  background-color: #27C34B;
+}
+.social-icons .btn:nth-child(2):hover {
+  background-color: #3A559F;
+}
+.social-icons .btn:nth-child(3):hover {
+  background : radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+}
+.social-icons .btn:nth-child(4):hover {
+  background-color: #3A559F;
+}
+
+@media (min-width: 992px) {
+  .social-icons {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 2.5rem;
+    width: auto;
+  }
+}
+
+
+
+
