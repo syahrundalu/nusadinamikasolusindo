@@ -1,4 +1,4 @@
-.resume-section .navside {
+.section .resume-section .navside {
   top: 50px;
   position: -webkit-sticky; /* safari */
   position: sticky;
@@ -45,8 +45,12 @@
 .resume-section .page .heading{
   font-weight: 800;
   font-size: 30px;
-  margin-bottom: 50px;
+  margin: 50px 0 50px 0;
   color: #111;
+}
+
+.resume-section #page-1 .heading{
+  margin-top: 0px;
 }
 
 
