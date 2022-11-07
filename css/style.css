@@ -9154,7 +9154,7 @@ textarea.form-control-lg {
   outline: none; }
 
 html, body {
-  overflow-x: hidden; }
+  overflow-x: clip; }
 
 body {
   font-family: "Montserrat", sans-serif;

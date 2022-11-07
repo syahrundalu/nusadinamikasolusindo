@@ -1,28 +1,29 @@
-.section .resume-section .navside {
+.resume-section #navi {
   top: 50px;
   position: -webkit-sticky; /* safari */
-  position: sticky;
+  display: sticky;
+  float : top;
 }
 
-.resume-section .navside ul {
+.resume-section #navi ul {
   margin: 0;
   padding: 0;
 }
-.resume-section .navside li {
+.resume-section #navi li {
   font-weight: 700;
   list-style: none;
   margin-bottom: 10px;
-  font-size: 18px;
+  font-size: 16px;
 }
-.resume-section .navside li a {
+.resume-section #navi li a {
   color: #000000;
 }
-.resume-section .navside li a.current {
-  color: #111;
+.resume-section #navi li a.current {
+  color: rgb(160, 36, 36);
   margin-left: 20px;
   position: relative;
 }
-.resume-section .navside li a.current:after {
+.resume-section .navi li a.current:after {
   position: absolute;
   top: 50%;
   left: -24px;
@@ -32,14 +33,14 @@
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  background: #111;
+  background: rgb(160, 36, 36);
 }
 
-.resume-section .navside .page {
+.resume-section #navi .page {
   width: 100%;
   margin-bottom: 7em;
 }
-.resume-section .navside .page.four {
+.resume-section #navi .page.four {
   margin-bottom: 0;
 }
 .resume-section .page .heading{
@@ -80,12 +81,12 @@
 }
 .resume-wrap .date {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 12px;
   color: rgba(0, 0, 0, 0.6);
   color: #111;
 }
 .resume-wrap h2 {
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 700;
 }
 .resume-wrap .position {
@@ -94,3 +95,30 @@
   color: #000000;
 }
 
+.resume-section .resume-flex {
+  width : 1100px;
+  margin : 50px auto;
+  clear: both;
+}
+
+.resume-section .resume-flex::before, .resume-section .resume-flex::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.resume-section .resume-flex .left{
+  width: 250px;
+  vertical-align: top;
+  display: inline-block;
+  float: left;
+  position: sticky;
+  position: -webkit-sticky;
+  top : 50px;
+}
+.resume-section .resume-flex .right{
+  width: 750px;
+  vertical-align: top;
+  display: inline-block;
+  float: right;
+}
