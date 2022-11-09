@@ -10346,6 +10346,19 @@ a {
   }
 }
 
+.galery {
+  background-color: #000;
+}
 
+.galery h2{
+  color: #fff;
+}
 
+.galery p{
+  color: #fff;
+}
 
+.galery .btn{
+  background-color: #fff;
+  color: #111;
+}

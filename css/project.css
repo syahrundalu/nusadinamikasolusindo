@@ -1,7 +1,7 @@
 .resume-section #navi {
   top: 50px;
   position: -webkit-sticky; /* safari */
-  display: sticky;
+  position: sticky;
   float : top;
 }
 
@@ -121,4 +121,20 @@
   vertical-align: top;
   display: inline-block;
   float: right;
+}
+
+@media (max-width: 768px) {
+  .resume-section .resume-flex .left{
+    position: relative;
+    float : center;
+    vertical-align: middle;
+    margin-bottom: 100px;
+  }
+  .resume-section .resume-flex .right{
+    width: 100%;
+    vertical-align: top;
+    display: inline-block;
+    float: center;
+    position: relative;
+  }
 }
