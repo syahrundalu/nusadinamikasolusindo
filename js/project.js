@@ -6,6 +6,33 @@ AOS.init({
 (function($) {   
 	"use strict";
 
+
+
+let section = document.querySelectorAll('section');
+let lists = document.querySelectorAll('.section .resume-section .container .resume-flex nav ul li');
+function activeLink(li) {
+    lists.forEach((item) => item.classList.remove('current'));
+    li.classList.add('current');
+}
+lists.forEach((item) =>
+    item.addEventListener('click', function(){
+        activeLink(this);
+    }));
+
+window.onscroll = () => {
+    section.forEach(sec => {
+        let top = window.scrollY;
+        let offset = sec.offsetTop;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute('id');
+
+        if (top >= offset && top < offset + height) {
+            const target = document.querySelector(`[href='#${id}']`).parentElement;
+            activeLink(target);
+        }
+    })
+};
+
 // this makes the height of each page equal to the height of the window
 // $('.page').css('height', $( window ).height());
 

@@ -18,12 +18,12 @@
 .resume-section #navi li a {
   color: #000000;
 }
-.resume-section #navi li a.current {
-  color: rgb(160, 36, 36);
+.resume-section #navi li a:active {
+  color: rgb(43, 46, 177);
   margin-left: 20px;
   position: relative;
 }
-.resume-section .navi li a.current:after {
+.resume-section .navi li a {
   position: absolute;
   top: 50%;
   left: -24px;
@@ -33,12 +33,13 @@
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  background: rgb(160, 36, 36);
+  background: rgb(43, 46, 177);
 }
 
 .resume-section #navi .page {
   width: 100%;
   margin-bottom: 7em;
+  top : 150px;
 }
 .resume-section #navi .page.four {
   margin-bottom: 0;
@@ -88,6 +89,7 @@
 .resume-wrap h2 {
   font-size: 16px;
   font-weight: 700;
+  line-height: 30px;
 }
 .resume-wrap .position {
   font-size: 18px;
