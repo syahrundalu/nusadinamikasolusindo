@@ -40,7 +40,7 @@
 		var propertySlider = document.querySelectorAll('.property-slider');
 		var imgPropertySlider = document.querySelectorAll('.img-property-slide');
 		var testimonialCenter = document.querySelectorAll('.testimonial-center');
-		
+		var teamSlider = document.querySelectorAll('.team-slider')
 
 		if ( heroSlider.length > 0 ) {
 			var tnsHeroSlider = tns({
@@ -89,6 +89,19 @@
 						items: 3
 					}
 				}
+			});
+		}
+
+		if ( imgPropertySlider.length > 0 ) {
+			var teamSlider = tns({
+				container: '.person',
+				mode: 'carousel',
+				speed: 700,
+				items: 1,
+				autoplay: true,
+				controls: false,
+				nav: true,
+				autoplayButtonOutput: false
 			});
 		}
 

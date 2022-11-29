@@ -9851,14 +9851,17 @@ a {
       transition: .3s all ease;
       -webkit-transform: scale(1);
       -ms-transform: scale(1);
-      transform: scale(1); }
+      transform: scale(1); 
+      filter: grayscale(100%);}
     .single-portfolio > a:hover:before {
       visibility: visible;
-      opacity: 1; }
+      opacity: 1;
+      filter: grayscale(100%); }
     .single-portfolio > a:hover img {
       -webkit-transform: scale(1.05);
       -ms-transform: scale(1.05);
-      transform: scale(1.05); }
+      transform: scale(1.05);
+      filter: grayscale(0%);}
     .single-portfolio > a:hover .contents {
       margin-top: 0px;
       opacity: 1;
@@ -10348,7 +10351,7 @@ a {
 }
 
 .galery {
-  background-color: #163E58;
+  background-color: #111;
 }
 
 .galery h2{
