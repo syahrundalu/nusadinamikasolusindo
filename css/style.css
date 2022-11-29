@@ -9885,6 +9885,14 @@ a {
     .single-portfolio .contents .cat {
       color: rgba(255, 255, 255, 0.5); }
 
+ @media (max-width: 767.98px){
+.person {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ }
+ }
+
 .person h3, .person .h3 {
   font-size: 20px; }
 
