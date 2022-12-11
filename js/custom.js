@@ -9,7 +9,16 @@
 		once: true
 	});
 
+/*
+	var loader = document.getElementById('preloader');
 
+		window.addEventListener ("load", function() {
+			setTimeout(function(){loader.style.display = 'none';}, 1000).fadeOut('slow')
+			
+		});
+
+*/
+		
 
 
 	var tinyslier = function() {
@@ -141,5 +150,15 @@
 	});
 
 })()
+
+$(document).ready(function(){   
+	window.setTimeout('fadeout();', 200);
+	
+});
+function fadeout(){
+	$('#preloader').delay(200).fadeOut('slow', function() {
+	   $('.notLoaded').removeClass('notLoaded');
+	});
+}
 
  

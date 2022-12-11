@@ -1,6 +1,6 @@
 
 :root {
-  --bs-blue: #163E58;
+  --bs-blue: #06274E;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
   --bs-pink: #d63384;
@@ -13,7 +13,7 @@
   --bs-white: #fff;
   --bs-gray: #6c757d;
   --bs-gray-dark: #343a40;
-  --bs-primary: #163E58;
+  --bs-primary: #06274E;
   --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
@@ -9926,10 +9926,10 @@ a {
   margin-bottom:-100px;
   font-size: 14px;
   background-color: #000;
-  color: #fff; }
+  color: #111; }
 
   .site-footer .widget h3, .site-footer .widget li, .site-footer .widget .links li, .site-footer .widget a, .site-footer .widget p{
-    color: #fff; }
+    color: #111; }
   
   @media (max-width: 767.98px) {
     .site-footer {
@@ -10362,7 +10362,7 @@ a {
 }
 
 .galery {
-  background-color: #111;
+  background-color: var(--bs-primary);
 }
 
 .galery h2{
@@ -10390,6 +10390,7 @@ a {
   height: 100%;
   overflow: visible;
   background: #06274E;
+  transition:1s ease-out;
 }
 
 .preloader:active {
@@ -10398,15 +10399,27 @@ a {
 
 .preloader .preloader-logo {
    position: absolute;
-   left: 45%;
-   top: 40%;
+   left: 49%;
+   top: 45%;
    transform: translate(-50%, -50%);
+   align-items: center;
+   justify-content: center;
+   width: auto;
 }
 
 .preloader .preloader-logo img{
   display: inline-block;
   z-index: 2;
   position: absolute;
+  width: 100px;
 }
+
+@media (max-width: 767.98px) {
+  .preloader .preloader-logo {
+    left: 35%;
+    top: 45%; }
+
+ }
+
 
 
