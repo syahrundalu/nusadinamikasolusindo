@@ -36,6 +36,31 @@ window.onscroll = () => {
 // this makes the height of each page equal to the height of the window
 // $('.page').css('height', $( window ).height());
 
+
+  /**
+   * Initiate portfolio lightbox 
+   */
+   const portfolioLightbox = GLightbox({
+    selector: '.portfokio-lightbox'
+  });
+
+  /**
+   * Portfolio details slider
+   */
+  new Swiper('.portfolio-details-slider', {
+    speed: 400,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    }
+  });
+
+
 // scrollspy section
 (function($){
  //variable that will hold the href attr of the links in the menu
