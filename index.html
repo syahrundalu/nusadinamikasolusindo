@@ -299,20 +299,21 @@
 			</div>
 			<div class="row" data-aos="fade-up" data-aos-delay="100">
 				<div class="col-lg-12 d-flex justify-content-center">
-				  <ul id="portfolio-flters">
-					<li data-filter="*" class="filter-active">All</li>
-					<li data-filter=".filter-basic">Basic</li>
-					<li data-filter=".filter-animal">For Animal</li>
-					<li data-filter=".filter-plant">For Plant</li>
-					<li data-filter=".filter-brush">Brushes</li>
-				  </ul>
+
+				  <div class="button-group filters-button-group portfolio-flters">
+					<button class="button is-checked" data-filter="*">All</button>
+					<button class="button" data-filter=".filter-basic">Corujas</button>
+					<button class="button" data-filter=".filter-brush">Paisagens</button>
+					<button class="button" data-filter=".filter-animal">Galáxias</button>
+				  </div>
 				</div>
-			  </div>
+			</div>
+
 
 			  
 
 			<div class="row g-4 portfolio-container" data-aos="fade-up" data-aos-delay="500">
-				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 portfolio-item filter-basic">
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 portfolio-item transition filter-basic" data-category="filter-basic">
 					<div class="single-portfolio portfolio-wrap">
 						<a>
 							<img src="images/projects/SI AP 2.jpg" alt="Image" class="img-fluid">
@@ -323,7 +324,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 portfolio-item filter-animal">
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 portfolio-item transition filter-animal" data-category="filter-animal">
 					<div class="single-portfolio portfolio-wrap">
 						<a>
 							<img src="images/projects/SR Jayapura.jpg" alt="Image" class="img-fluid">
@@ -334,7 +335,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 portfolio-item filter-brush">
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 portfolio-item transition filter-brush" data-category="filter-brush">
 					<div class="single-portfolio portfolio-wrap">
 						<a href="project-single.html">
 							<img src="images/projects/SI Bandara Juanda.jpg" alt="Image" class="img-fluid">
@@ -346,7 +347,7 @@
 					</div>
 				</div>
 
-				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 portfolio-item filter-basic">
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 portfolio-item transition filter-basic" data-category="filter-basic">
 					<div class="single-portfolio portfolio-wrap">
 						<a>
 							<img src="images/projects/SR Batubara.jpg" alt="Image" class="img-fluid">
@@ -357,7 +358,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 portfolio-item filter-basic">
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 portfolio-item transition filter-basic" data-category="filter-basic">
 					<div class="single-portfolio portfolio-wrap">
 						<a>
 							<img src="images/projects/SI TP Bandara Kualanamu CBR.jpg" alt="Image" class="img-fluid">
@@ -368,7 +369,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 portfolio-item filter-basic" >
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 portfolio-item transition filter-basic" data-category="filter-basic">
 					<div class="single-portfolio portfolio-wrap">
 						<a>
 							<img src="images/projects/SI Cihapit.jpg" alt="Image" class="img-fluid">
@@ -380,13 +381,18 @@
 					</div>
 				</div>
 
-				<div class="col-md-12 text-center mt-5">
-					<p><a href="projects.html" class="btn btn-primary me-4">See all projects</a></p>
-				</div>
+				
 
 			</div>
+			<div class="col-md-12 text-center mt-5">
+				<p><a href="projects.html" class="btn btn-primary me-4">See all projects</a></p>
+			</div>
 		</div>
+		  
+		 
+		
 	</div>
+
 
 	<div class="sec-4 section bg-light">
 
@@ -833,17 +839,17 @@
 
 
 	<!-- jQuery -->
-	<script src="plugins/jQuery/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 	<script src="js/jquery.easing.1.3.js"></script>
 	<script src="js/jquery.waypoints.min.js"></script>
 	<script src="js/jquery.stellar.min.js"></script>
-	<script src="js/jquery-migrate-3.0.1.min.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/jquery.animateNumber.min.js"></script>
 
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="plugins/slick/slick.min.js"></script>
 	<script src="js/tiny-slider.js"></script>
+	<script src="plugins/isotope-layout/isotope.pkgd.min.js"></script>
 	<script src="js/aos.js"></script>
 	<script src="js/glightbox.min.js"></script>
 	<script src="js/navbar.js"></script>
@@ -853,7 +859,7 @@
 	<script src="js/popper.js"></script>
 	<script src="js/burgermenu.js"></script>
 	<script src="js/project.js"></script>
-	<script src="plugins/isotope-layout/isotope.pkgd.min.js"></script>
+
 
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="http://iprodev.github.io/Scrollax.js/lib/scrollax.min.js"></script>
