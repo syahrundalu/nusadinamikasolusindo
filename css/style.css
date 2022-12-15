@@ -10334,7 +10334,7 @@ a {
   width: 3rem;
   color: #fff;
   border-radius: 100rem;
-  background-color:#000;
+  background-color:var(--bs-primary);
   transition: .3s ease-in-out;
 }
 
