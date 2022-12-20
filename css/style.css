@@ -9921,7 +9921,8 @@ a {
     padding: 10px; }
 
 .site-footer {
-  padding-top: 70px;
+  height: 80vh;
+  padding-top: 120px;
   padding-bottom: 30px;
   margin-bottom:-100px;
   font-size: 14px;
