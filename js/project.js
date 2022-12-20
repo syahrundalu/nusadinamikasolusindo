@@ -8,6 +8,10 @@ AOS.init({
 
 
 
+
+
+
+
 let section = document.querySelectorAll('section');
 let lists = document.querySelectorAll('.section .resume-section .container .resume-flex nav ul li');
 function activeLink(li) {

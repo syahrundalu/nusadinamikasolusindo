@@ -41,6 +41,7 @@
 		var imgPropertySlider = document.querySelectorAll('.img-property-slide');
 		var testimonialCenter = document.querySelectorAll('.testimonial-center');
 		var teamSlider = document.querySelectorAll('.team-slider')
+		var teamInfoSLider = document.querySelectorAll('.main-content')
 
 		if ( heroSlider.length > 0 ) {
 			var tnsHeroSlider = tns({
@@ -105,7 +106,52 @@
 			});
 		}
 
-
+	/*	if ( teamInfoSLider.length> 0 ) {
+			var teamInfoSLider = tns({
+				container: '#team-slider',
+				items: 1,
+				mode: 'carousel',
+				slideBy: 'page',
+				nav: false,
+				controls: true,
+				autoplay: true,
+				autoplayButtonOutput: false,
+				controls: true,
+				gutter: 50,
+				slideBy: 1,
+				edgePadding: 0,
+				center: true,
+				controlsContainer: '#team-nav',
+				autoplayHoverPause: true,
+				loop: true,
+				swipeAngle: false,
+				speed: 700,
+	
+				responsive: {
+					350: {
+						gutter: 10,
+						edgePadding: 0,
+						items: 1,
+					},
+					500: {
+						gutter: 20,
+						edgePadding: 0,
+						items: 1,
+					},
+					700: {
+						gutter: 50,
+						edgePadding: 20,
+						items: 2,
+					},
+					1000: {
+						gutter: 50,
+						edgePadding: 50,
+						items: 2,
+					}
+				}
+	
+			});
+		} */
 
 		if ( testimonialCenter.length> 0 ) {
 			var testimonialSlider = tns({
@@ -155,6 +201,8 @@
 		}
 
 	}
+
+	
 	tinyslier();
 
 	
@@ -173,6 +221,42 @@ function fadeout(){
 	   $('.notLoaded').removeClass('notLoaded');
 	});
 }
+
+// team slider
+$('.team-navi').slick({
+	dots: false,
+	infinite: true,
+	speed: 1000,
+	autoplay: true,
+	autoplaySpeed: 3000,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	arrows: true,
+	prevArrow: '<button type=\'button\' class=\'prevArrow\'><i class=\'icon-chevron-left\'></i></button>',
+	nextArrow: '<button type=\'button\' class=\'nextArrow\'><i class=\'icon-chevron-right\'></i></button>',
+	responsive: [{
+		breakpoint: 1024,
+		settings: {
+		  slidesToShow: 1,
+		  slidesToScroll: 1
+		}
+	  },
+	  {
+		breakpoint: 991,
+		settings: {
+		  slidesToShow: 1,
+		  slidesToScroll: 1
+		}
+	  },
+	  {
+		breakpoint: 767,
+		settings: {
+		  slidesToShow: 1,
+		  slidesToScroll: 1
+		}
+	  }
+	]
+  });
  
 // external js: isotope.pkgd.js
 // https://isotope.metafizzy.co/

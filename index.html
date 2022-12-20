@@ -23,6 +23,7 @@
 	<link rel="stylesheet" href="css/project.css">
 	<link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	
 	
 
@@ -128,43 +129,11 @@
 				</div>
 			</div>
 		</div>
+
+		
 	</div>
 
-		<!-- clients -->
 
-		<div class="section client">
-			<div class="container">
-			  <div class="client-logo-slider align-self-center">
-					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-1.png" alt="client-logo"></a>
-					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-2.png" alt="client-logo"></a>
-					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-4.png" alt="client-logo"></a>
-					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-5.png" alt="client-logo"></a>
-					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-6.png" alt="client-logo"></a>
-					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-7.png" alt="client-logo"></a>
-					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-8.png" alt="client-logo"></a>
-					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-9.png" alt="client-logo"></a>
-					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-10.png" alt="client-logo"></a>
-					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-11.png" alt="client-logo"></a>
-					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-12.png" alt="client-logo"></a>
-					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-13.png" alt="client-logo"></a>
-					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-14.png" alt="client-logo"></a>
-					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-15.png" alt="client-logo"></a>
-					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-16.png" alt="client-logo"></a>
-					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-17.png" alt="client-logo"></a>
-					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-18.png" alt="client-logo"></a>
-					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-19.png" alt="client-logo"></a>
-					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-20.png" alt="client-logo"></a>
-					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-21.png" alt="client-logo"></a>
-					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-22.png" alt="client-logo"></a>
-					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-23.png" alt="client-logo"></a>
-					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-24.png" alt="client-logo"></a>
-					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-25.png" alt="client-logo"></a>
-					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-26.png" alt="client-logo"></a>
-				</div>
-			</div>
-		</div>
-		  <!-- /clients -->
-		
 
 
 	<div class="section sec-1">
@@ -177,14 +146,27 @@
 					<p><a href="#" class="more-2">Learn more <span class="icon-arrow_forward"></span></a></p>
 				</div>
 				<div class="col-lg-7 ms-auto" data-aos="fade-up" data-aos-delay="500">
-					<img src="images/about-us.jpg" alt="Image" class="img-fluid img-r">
+					<img src="images/about-us.jpg" alt="Image" class="img-fluid img-r" id="imageAbout">
 				</div>
 			</div>
 		</div>
 	</div>
 
+	
+	<script>
+		let imageAbout = document.getElementById('imageAbout');
+	   
+  
+		window.addEventListener('scroll', function(){
+			let value = window.scrollY;
+			imageAbout.style.width = value * 0.8 + 'px';
+			
+	  
+		})
+	</script>
+
 	<div class="section sec-4">
-		<div class="container">
+		<div class="container" data-aos="fade-up" data-aos-delay="500">
 			<div class="row mb-5">
 				<div class="col-lg-6">
 					<h2 class="heading">Services</h2>
@@ -287,11 +269,11 @@
 	</div>
 </div>
 
-	<div class="section sec-5 galery portfolio" id="portfolio">
+	<div class="section sec-3 galery portfolio" id="portfolio">
 		<div class="container">
 			<div class="row mb-5">
 				<div class="col-lg-6">
-					<h2 class="heading">Galery</h2>
+					<h2 class="heading">GALERY</h2>
 				</div>
 				<div class="col-lg-4">
 					<p>Delectus voluptatum distinctio quos eius excepturi sunt pariatur, aut, doloribus officia ea molestias beatae laudantium, quam odio ipsum veritatis est maiores velit quasi blanditiis et natus accusamus itaque.</p>
@@ -313,7 +295,7 @@
 
 			  
 
-			<div class="row g-4 portfolio-container" data-aos="fade-up" data-aos-delay="500">
+			<div class="row g-4 portfolio-container">
 				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 portfolio-item transition filter-basic" data-category="filter-basic">
 					<div class="single-portfolio portfolio-wrap">
 						<a>
@@ -395,6 +377,42 @@
 	</div>
 
 
+		<!-- clients -->
+
+		<div class="section client">
+			<div class="container">
+			  <div class="client-logo-slider align-self-center">
+					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-1.png" alt="client-logo"></a>
+					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-2.png" alt="client-logo"></a>
+					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-4.png" alt="client-logo"></a>
+					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-5.png" alt="client-logo"></a>
+					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-6.png" alt="client-logo"></a>
+					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-7.png" alt="client-logo"></a>
+					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-8.png" alt="client-logo"></a>
+					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-9.png" alt="client-logo"></a>
+					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-10.png" alt="client-logo"></a>
+					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-11.png" alt="client-logo"></a>
+					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-12.png" alt="client-logo"></a>
+					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-13.png" alt="client-logo"></a>
+					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-14.png" alt="client-logo"></a>
+					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-15.png" alt="client-logo"></a>
+					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-16.png" alt="client-logo"></a>
+					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-17.png" alt="client-logo"></a>
+					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-18.png" alt="client-logo"></a>
+					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-19.png" alt="client-logo"></a>
+					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-20.png" alt="client-logo"></a>
+					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-21.png" alt="client-logo"></a>
+					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-22.png" alt="client-logo"></a>
+					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-23.png" alt="client-logo"></a>
+					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-24.png" alt="client-logo"></a>
+					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-25.png" alt="client-logo"></a>
+					<a class="text-center d-block outline-0 p-3"><img class="d-unset img-fluid" src="images/clients-logo/client-26.png" alt="client-logo"></a>
+				</div>
+			</div>
+		</div>
+		  <!-- /clients -->
+		
+
 	<div class="sec-4 section bg-light">
 
 		<div class="text-center mb-5">
@@ -414,7 +432,7 @@
 					<div class="testimonial-item">
 						<div  class="testimonial-item-inner">
 							<div class="testimonial-author mb-5">
-								<img src="images/person_2.jpg" alt="Image" class="img-fluid">
+								<img src="images/client/indulexco.png" alt="Image" class="img-fluid">
 								<strong class="d-block">Muqwin Hakimy Syahza</strong>
 								<span>Operation Manager, Indulexco</span>
 							</div>
@@ -432,12 +450,16 @@
 					<div class="testimonial-item">
 						<div  class="testimonial-item-inner">
 							<div class="testimonial-author mb-5">
-								<img src="images/person_1.jpg" alt="Image" class="img-fluid">
-								<strong class="d-block">James Campbell</strong>
-								<span>CEO, Co-Founder</span>
+								<img src="images/client/nur straits.png" alt="Image" class="img-fluid">
+								<strong class="d-block">Pebri Hery, MT</strong>
+								<span>Owmer, Nur Straits Engineering</span>
 							</div>
 							<blockquote>
-								Delectus voluptatum distinctio quos eius excepturi sunt pariatur, aut, doloribus officia ea molestias beatae laudantium, quam odio ipsum veritatis est maiores velit quasi blanditiis et natus accusamus itaque. Veniam quidem debitis odio amet voluptas distinctio dicta placeat! Et pariatur doloremque ea veniam.
+								I was impressed with the high quality of work performed as well as the conscientious and timely manner in which tasks were completed. NDS was there for us every step of the way providing creative and practical solutions to overcome each obstacle that lay in our path during the project
+								<br>
+								<br>
+								NDS technical experience along with their ability to perform within time constraints ahas saved us valuable time and money. NDS anot only met but exceeded our expectations aas a land use planning, surveying, civil and astructural engineering design consultant . I awould strongly recommend them to any client ain need of these services.”
+							
 							</blockquote>
 
 						</div>
@@ -448,28 +470,12 @@
 					<div class="testimonial-item">
 						<div  class="testimonial-item-inner">
 							<div class="testimonial-author mb-5">
-								<img src="images/person_3.jpg" alt="Image" class="img-fluid">
-								<strong class="d-block">James Campbell</strong>
-								<span>CEO, Co-Founder</span>
+								<img src="images/client/andalan prima Indonesia.png" alt="Image" class="img-fluid">
+								<strong class="d-block">Dani Priatna</strong>
+								<span>Operation Manager, Andalan Prima Indonesia</span>
 							</div>
 							<blockquote>
-								Delectus voluptatum distinctio quos eius excepturi sunt pariatur, aut, doloribus officia ea molestias beatae laudantium, quam odio ipsum veritatis est maiores velit quasi blanditiis et natus accusamus itaque. Veniam quidem debitis odio amet voluptas distinctio dicta placeat! Et pariatur doloremque ea veniam.
-							</blockquote>
-
-						</div>
-					</div>
-				</div>
-
-				<div class="item">
-					<div class="testimonial-item">
-						<div  class="testimonial-item-inner">
-							<div class="testimonial-author mb-5">
-								<img src="images/person_4.jpg" alt="Image" class="img-fluid">
-								<strong class="d-block">James Campbell</strong>
-								<span>CEO, Co-Founder</span>
-							</div>
-							<blockquote>
-								Delectus voluptatum distinctio quos eius excepturi sunt pariatur, aut, doloribus officia ea molestias beatae laudantium, quam odio ipsum veritatis est maiores velit quasi blanditiis et natus accusamus itaque. Veniam quidem debitis odio amet voluptas distinctio dicta placeat! Et pariatur doloremque ea veniam.
+								Untuk dua pekerjaan yang telah dikerjakan oleh pihak NDS kami an PT Andalan Prima Indonesia sangat senang dengan hasil kerja dan laporannya sehingga kami bisa membuat satu keputusan berdasarkan data yang kami peroleh. Kami berharap kerjasama dengan NDS dapat berlanjut pada proyek kami selanjutnya.
 							</blockquote>
 
 						</div>
@@ -477,84 +483,6 @@
 				</div>
 
 
-				<div class="item">
-					<div class="testimonial-item">
-						<div  class="testimonial-item-inner">
-							<div class="testimonial-author mb-5">
-								<img src="images/person_5.jpg" alt="Image" class="img-fluid">
-								<strong class="d-block">James Campbell</strong>
-								<span>CEO, Co-Founder</span>
-							</div>
-							<blockquote>
-								Delectus voluptatum distinctio quos eius excepturi sunt pariatur, aut, doloribus officia ea molestias beatae laudantium, quam odio ipsum veritatis est maiores velit quasi blanditiis et natus accusamus itaque. Veniam quidem debitis odio amet voluptas distinctio dicta placeat! Et pariatur doloremque ea veniam.
-							</blockquote>
-
-						</div>
-					</div>
-				</div>
-
-				<div class="item">
-					<div class="testimonial-item">
-						<div  class="testimonial-item-inner">
-							<div class="testimonial-author mb-5">
-								<img src="images/person_2.jpg" alt="Image" class="img-fluid">
-								<strong class="d-block">James Campbell</strong>
-								<span>CEO, Co-Founder</span>
-							</div>
-							<blockquote>
-								Delectus voluptatum distinctio quos eius excepturi sunt pariatur, aut, doloribus officia ea molestias beatae laudantium, quam odio ipsum veritatis est maiores velit quasi blanditiis et natus accusamus itaque. Veniam quidem debitis odio amet voluptas distinctio dicta placeat! Et pariatur doloremque ea veniam.
-							</blockquote>
-
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="testimonial-item">
-						<div  class="testimonial-item-inner">
-							<div class="testimonial-author mb-5">
-								<img src="images/person_3.jpg" alt="Image" class="img-fluid">
-								<strong class="d-block">James Campbell</strong>
-								<span>CEO, Co-Founder</span>
-							</div>
-							<blockquote>
-								Delectus voluptatum distinctio quos eius excepturi sunt pariatur, aut, doloribus officia ea molestias beatae laudantium, quam odio ipsum veritatis est maiores velit quasi blanditiis et natus accusamus itaque. Veniam quidem debitis odio amet voluptas distinctio dicta placeat! Et pariatur doloremque ea veniam.
-							</blockquote>
-
-						</div>
-					</div>
-				</div>
-
-				<div class="item">
-					<div class="testimonial-item">
-						<div  class="testimonial-item-inner">
-							<div class="testimonial-author mb-5">
-								<img src="images/person_4.jpg" alt="Image" class="img-fluid">
-								<strong class="d-block">James Campbell</strong>
-								<span>CEO, Co-Founder</span>
-							</div>
-							<blockquote>
-								Delectus voluptatum distinctio quos eius excepturi sunt pariatur, aut, doloribus officia ea molestias beatae laudantium, quam odio ipsum veritatis est maiores velit quasi blanditiis et natus accusamus itaque. Veniam quidem debitis odio amet voluptas distinctio dicta placeat! Et pariatur doloremque ea veniam.
-							</blockquote>
-
-						</div>
-					</div>
-				</div>
-
-				<div class="item">
-					<div class="testimonial-item">
-						<div  class="testimonial-item-inner">
-							<div class="testimonial-author mb-5">
-								<img src="images/person_1.jpg" alt="Image" class="img-fluid">
-								<strong class="d-block">James Campbell</strong>
-								<span>CEO, Co-Founder</span>
-							</div>
-							<blockquote>
-								Delectus voluptatum distinctio quos eius excepturi sunt pariatur, aut, doloribus officia ea molestias beatae laudantium, quam odio ipsum veritatis est maiores velit quasi blanditiis et natus accusamus itaque. Veniam quidem debitis odio amet voluptas distinctio dicta placeat! Et pariatur doloremque ea veniam.
-							</blockquote>
-
-						</div>
-					</div>
-				</div>
 			</div>
 
 		</div>
@@ -622,81 +550,117 @@
 		</div>
 	</div>
 
-	<div class="section sec-team sec-4 pb-5">
-		<div class="container">
-			<div class="row mb-5">
-				<div class="col-lg-6 mx-auto text-center">
-					<h2 class="heading">We Are The Team</h2>
-				</div>
-				
+	<div class="infos section" id="infos">
+		<div class="row mb-5">
+			<div class="col-lg-6 mx-auto text-center">
+				<h2 class="heading">We Are The Team</h2>
+				<p>Our team of designers, engineers, and compliance experts are dedicated to your success throughout the project 
+					lifecycle. We pride ourselves on being able to provide innovative solutions to meet the toughest of scenarios. Our 
+					team is built around the principle of delivering to tight time-scales whilst maintaining our high standards of quality</p>
 			</div>
-			<div class="row g-5 team-slider">
-				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-					<div class="person">
-						<img src="images/person_1.jpg" alt="Image" class="img-fluid rounded-circle mx-auto w-50 mb-3">
-						<h3 class="mb-1">Jayson Campbell</h3>
-						<span class="d-block text-black-50 mb-3">CEO, Partner</span>
-						<p class="text-black-50">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-						<ul class="social-2 list-unstyled mb-5">
-							<li><a href="#"><span class="icon-facebook"></span></a></li>
-							<li><a href="#"><span class="icon-twitter"></span></a></li>
-							<li><a href="#"><span class="icon-instagram"></span></a></li>
-							<li><a href="#"><span class="icon-dribbble"></span></a></li>
-							<li><a href="#"><span class="icon-linkedin"></span></a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-					<div class="person">
-						<img src="images/person_2.jpg" alt="Image" class="img-fluid rounded-circle mx-auto w-50 mb-3">
-						<h3 class="mb-1">Jayson Campbell</h3>
-						<span class="d-block text-black-50 mb-3">CEO, Partner</span>
-						<p class="text-black-50">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-						<ul class="social-2 list-unstyled mb-5">
-							<li><a href="#"><span class="icon-facebook"></span></a></li>
-							<li><a href="#"><span class="icon-twitter"></span></a></li>
-							<li><a href="#"><span class="icon-instagram"></span></a></li>
-							<li><a href="#"><span class="icon-dribbble"></span></a></li>
-							<li><a href="#"><span class="icon-linkedin"></span></a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-					<div class="person">
-						<img src="images/person_3.jpg" alt="Image" class="img-fluid rounded-circle mx-auto w-50 mb-3">
-						<h3 class="mb-1">Jayson Campbell</h3>
-						<span class="d-block text-black-50 mb-3">CEO, Partner</span>
-						<p class="text-black-50">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-						<ul class="social-2 list-unstyled mb-5">
-							<li><a href="#"><span class="icon-facebook"></span></a></li>
-							<li><a href="#"><span class="icon-twitter"></span></a></li>
-							<li><a href="#"><span class="icon-instagram"></span></a></li>
-							<li><a href="#"><span class="icon-dribbble"></span></a></li>
-							<li><a href="#"><span class="icon-linkedin"></span></a></li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-					<div class="person">
-						<img src="images/person_4.jpg" alt="Image" class="img-fluid rounded-circle mx-auto w-50 mb-3">
-						<h3 class="mb-1">Jayson Campbell</h3>
-						<span class="d-block text-black-50 mb-3">CEO, Partner</span>
-						<p class="text-black-50">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-						<ul class="social-2 list-unstyled mb-5">
-							<li><a href="#"><span class="icon-facebook"></span></a></li>
-							<li><a href="#"><span class="icon-twitter"></span></a></li>
-							<li><a href="#"><span class="icon-instagram"></span></a></li>
-							<li><a href="#"><span class="icon-dribbble"></span></a></li>
-							<li><a href="#"><span class="icon-linkedin"></span></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-
+			
 		</div>
-	</div>
+		<div class="container team-page">
+		  <div class="row">
+			  <div class="team-navi justify-content-center align-items-center col-lg-12" id="team-navi">
+					<div class="col-lg-12 team-person">
+						<div class="main-content">
+							<div class="row">
+							<div class="col-lg-6 order-sm-1">
+								<div class="left-image">
+								<img src="images/team/team-dummy-1.jpg" alt="">
+								</div>
+							</div>
+							<div class="col-lg-6 col-12 order-sm-2">
+								<div class="section-heading">
+								<h2>Andreas Sinaga, M.T</h2>
+								<span class="d-block text-black-50 mb-3">President Directur</span>
+								<div class="line-dec"></div>
+								<p>Born in Bandung, November 7th 1990. He graduated from Parahyangan Catholic University, Bandung in 2012 and holds a master degree of Geotechnical Engineering from Institut Teknologi Bandung. Andreas’s primary goal is making his clients successful. He maintains a powerful professional network that allows him to assemble customized teams to accomplish project goals. As NDS Engineering founder and President, he is personally involved with each and every project undertaken by the company. He is a member of the Indonesian Society for Geotechnical Engineering - ISGE (G-1).</p>
+								</div>
+								<div class="widget">
+									
+									<ul class="social list-unstyled mb-5">
+										<li><a href="#"><span class="icon-facebook"></span></a></li>
+										<li><a href="#"><span class="icon-twitter"></span></a></li>
+										<li><a href="#"><span class="icon-instagram"></span></a></li>
+										<li><a href="#"><span class="icon-dribbble"></span></a></li>
+										<li><a href="#"><span class="icon-linkedin"></span></a></li>
+									</ul>
+								</div>
+								
+							</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-lg-12 col-12 team-person">
+						<div class="main-content">
+							<div class="row">
+							<div class="col-lg-6">
+								<div class="left-image">
+								<img src="images/team/team-dummy-2.jpg" alt="">
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="section-heading">
+								<h2>Ikhsan Ramadhan, S.T.</h2>
+								<span class="d-block text-black-50 mb-3">Technical and Operations Director</span>
+								<div class="line-dec"></div>
+								<p>Born in Bandung April 5th 1990, he holds a Civil Engineering degree from Parahyangan Catholic University. In his role as Technical and Operations Director, he is responsible for ensuring the delivery of quality engineering services that the firm is known for. Ikhsan has been instrumental in building NDS Engineering unified and efficacious team, working closely with managers and engineers to ensure schedules and budgets stay on track. A results-driven leader, he focuses on identifying the best solutions for the challenges posed by his clients, utilizing the diverse skills of NDS Engineering team and applying the necessary resources to get the job done.</p>
+								</div>
+								<div class="widget">
+									
+									<ul class="social list-unstyled mb-5">
+										<li><a href="#"><span class="icon-facebook"></span></a></li>
+										<li><a href="#"><span class="icon-twitter"></span></a></li>
+										<li><a href="#"><span class="icon-instagram"></span></a></li>
+										<li><a href="#"><span class="icon-dribbble"></span></a></li>
+										<li><a href="#"><span class="icon-linkedin"></span></a></li>
+									</ul>
+								</div>
+								
+							</div>
+							</div>
+						</div>
+					</div>
 
+					<div class="col-lg-12 col-12 team-person">
+						<div class="main-content">
+							<div class="row">
+							<div class="col-lg-6">
+								<div class="left-image">
+								<img src="images/team/team-dummy-3.jpg" alt="">
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="section-heading">
+								<h2>Binter Sinaga, S.E., Ak.</h2>
+								<span class="d-block text-black-50 mb-3">Commissioner</span>
+								<div class="line-dec"></div>
+								<p>Born in Samosir January 24th 1957, for more than three decades Binter Sinaga is involved in the bussiness. During 1990s and 2000s Binter became top management at one of the biggest Indonesian Goverment Owned Company, PT. Dirgantara Indonesia, Comissioner of PT. Nusantara Turbin and Propulsi and Director of Finance of Dana Pensiun PT. Dirgantara Indonesia. With his qualities and massive experience, Binter focuses to keep our bussiness stay on the track and keep aiming our goals as world class company.</p>
+								</div>
+								<div class="widget">
+									
+									<ul class="social list-unstyled mb-5">
+										<li><a href="#"><span class="icon-facebook"></span></a></li>
+										<li><a href="#"><span class="icon-twitter"></span></a></li>
+										<li><a href="#"><span class="icon-instagram"></span></a></li>
+										<li><a href="#"><span class="icon-dribbble"></span></a></li>
+										<li><a href="#"><span class="icon-linkedin"></span></a></li>
+									</ul>
+								</div>
+								
+							</div>
+							</div>
+						</div>
+					</div>
+		</div>
+		  </div>
+		</div>
+	  </div>
+
+	
 	<div class="section sec-contact">
 		<div class="container">			
 			<div class="row mb-5 justify-content-center text-center">
@@ -752,14 +716,14 @@
 	</div>
 	
 
-	<div class="site-footer bg-light">
+	<div class="site-footer">
 		<div class="container">
 
-			<div class="row justify-content-between">
+			<div class="row justify-content-between mt-5">
 				<div class="col-lg-4">
 					<div class="widget">
 						<h3 class="line-top">About</h3>
-						<p class="mb-5">Delectus voluptatum distinctio quos eius excepturi sunt pariatur, aut, doloribus officia ea molestias beatae laudantium, quam odio ipsum veritatis est maiores velit quasi blanditiis et natus accusamus itaque. Veniam quidem debitis odio amet voluptas distinctio dicta placeat! Et pariatur doloremque ea veniam. Separated they live.</p>
+						<p class="mb-5">We acknowledge that our future is tied to the future of our clients, and we drive for excellence in our services and innovation in our solutions to improve our client’s outcomes both technically and commercially.</p>
 
 					</div>
 					<div class="widget">
@@ -819,7 +783,7 @@
 
 			<div class="row justify-content-center text-center copyright">
 				<div class="col-md-8">
-					<p class="small text-black-50">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; by Nusa Dinamika Solusindo
+					<p class="small">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; by Nusa Dinamika Solusindo
 					</p>
 				</div>
 			</div>

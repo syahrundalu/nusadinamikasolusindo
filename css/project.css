@@ -168,6 +168,10 @@
   }
 }
 
+.galery {
+  height: auto;
+}
+
 .galery #portfolio-flters {
   padding: 0;
   margin: 0 auto 25px auto;
@@ -228,4 +232,110 @@
   margin: 10px;
   width: calc(33% - 20px);
   display: inline-block;
+}
+
+.infos {
+  background-color: rgb(248, 248, 248);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 120px 0px;
+  margin-top: 120px;
+  margin-bottom: 240px;
+}
+
+
+.infos .main-content {
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 5px 20px 50px rgba(17, 17, 17, 0.13);
+  width: 1050px;
+  margin-left: 120px;
+}
+
+.infos .main-content .left-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  
+}
+
+.infos .main-content .left-image img {
+  width: 100%;
+  height: auto;
+}
+
+.infos .main-content .section-heading {
+  padding: 60px 60px 30px 0px;
+}
+
+.infos .main-content .section-heading h2 {
+  font-weight : bold;
+  margin-top: 50px;
+}
+
+.infos .main-content .section-heading span {
+  margin-bottom: 50px;
+}
+
+.infos .main-content p.more-info {
+  margin-top: -15px;
+  padding: 0px 60px 60px 60px;
+}
+
+.infos .main-content .widget {
+  margin-left: 10px;
+}
+
+.infos .main-content .widget ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.infos .main-content .widget ul li a {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #f8f9fa;
+  display: inline-block;
+  position: relative;
+  color: black; 
+}
+
+.infos .main-content .widget ul li a span{
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); 
+}
+
+.infos .team-page {
+  width: 100%;
+  align-items: center;
+}
+
+.infos .team-page .slick-arrow {
+  border: 0;
+  background: transparent;
+  color: #111;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  font-size: 25px;
+}
+
+.infos .team-page .slick-arrow.slick-disabled {
+  color: rgb(65, 65, 65);
+}
+
+.infos .team-page .prevArrow {
+  left: 10px;
+}
+
+.infos .team-page .nextArrow {
+  right: 10px;
 }
