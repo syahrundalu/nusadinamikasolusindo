@@ -9996,8 +9996,8 @@ a {
 
 
 .client {
-  background-color: rgba(238, 238, 238, 0.507);
-  height: 100x;
+  background-color: rgb(255, 255, 255);
+  height: auto;
   width: cover;
 
 }
