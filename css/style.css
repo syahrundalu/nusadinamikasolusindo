@@ -9485,7 +9485,7 @@ a {
         color: #fff; }
   @media (max-width: 767.98px) {
     .testimonial-slide-center-wrap .tns-item:not(.tns-slide-active) + .tns-slide-active {
-      opacity: 1; } }
+      opacity: 0; } }
   .testimonial-slide-center-wrap .tns-nav {
     position: absolute;
     left: 50%;
@@ -9521,9 +9521,9 @@ a {
   -ms-flex: 0 0 50px;
   flex: 0 0 50px;
   margin-right: 30px; }
-  .custom-card .img [class^="flaticon-"] {
+  .custom-card .img [class^="icon-"] {
     font-size: 50px;
-    color: #163E58; }
+    color: #ffffff; }
 
 .video-wrap {
   position: relative;
@@ -10372,10 +10372,12 @@ a {
 
 .galery {
   background-color: var(--bs-primary);
+  height: 100% !important;
 }
 
 .galery h2{
   color: #fff;
+  font-size: 24px;
 }
 
 .galery p{

@@ -231,7 +231,7 @@ $('.team-navi').slick({
 	autoplaySpeed: 3000,
 	slidesToShow: 1,
 	slidesToScroll: 1,
-	arrows: true,
+	arrows: false,
 	prevArrow: '<button type=\'button\' class=\'prevArrow\'><i class=\'icon-chevron-left\'></i></button>',
 	nextArrow: '<button type=\'button\' class=\'nextArrow\'><i class=\'icon-chevron-right\'></i></button>',
 	responsive: [{
@@ -276,7 +276,7 @@ $('.team-navi').slick({
 	  slidesToScroll: 3,
 	  responsive: [
 		{
-		  breakpoint: 800,
+		  breakpoint: 767,
 		  settings: {
 			slidesToShow: 1,
 			slidesToScroll: 1

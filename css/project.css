@@ -168,19 +168,15 @@
   }
 }
 
-.galery {
-  height: 100% !important;
-}
 
 .galery #portfolio-flters {
-  padding: 0;
   margin: 0 auto 25px auto;
   list-style: none;
   text-align: center;
   background: var(--primary-);
   padding: 2px 15px;
   align-items: center;
-  line-height: 0.5;
+  height: fit-content;
 }
 .galery #portfolio-flters li {
   cursor: pointer;
@@ -423,7 +419,7 @@
 }
 
 .timeline-carousel__item-wrapper{
-  padding-left: 150px;
+  padding-left: 175px;
 }
 
 .timeline-carousel__image {
@@ -476,7 +472,6 @@
   z-index: 3;
 }
 .timeline-carousel__item-inner .month {
-  font-family: "Libre Franklin", sans-serif;
   font-size: 12px;
   text-transform: uppercase;
   color: #ffc107;
@@ -537,6 +532,7 @@
   display: inline-block;
   margin: 0 6px;
   position: relative;
+  border-radius: 50%;
   width: 10px;
   height: 10px;
 }
@@ -602,10 +598,34 @@
   font-weight: 700;
 }
 .slick-prev {
-  left: 80px;
+  left: 10%;
   bottom: -80px;
 }
 .slick-next {
-  right: 80px;
+  right: 10%;
   bottom: -80px;
+}
+
+@media (max-width: 768px) {
+  .timeline-carousel__item-wrapper{
+    padding-left: 50px;
+  }
+  .slick-prev {
+    display: none;
+  }
+  .slick-next {
+    display: none;
+  }
+}
+
+
+.philosophy {
+  background:  url(../images/Hero/Team\ Footer.jpg) no-repeat center fixed;
+  background-size: cover; 
+  color: #fff;
+}
+
+.philosophy h2, .philosophy .custom-card .text h3, .philosophy .custom-card .text a,
+.philosophy .custom-card img i {
+  color: #fff;
 }
