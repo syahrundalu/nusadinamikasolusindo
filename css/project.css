@@ -629,3 +629,9 @@
 .philosophy .custom-card img i {
   color: #fff;
 }
+
+.about2 {
+  background: url(../images/Hero/Abouthero2.jpg) no-repeat center;
+  background-size:cover;
+  height: 100vh;
+}

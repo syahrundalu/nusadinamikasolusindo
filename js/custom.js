@@ -106,52 +106,6 @@
 			});
 		}
 
-	/*	if ( teamInfoSLider.length> 0 ) {
-			var teamInfoSLider = tns({
-				container: '#team-slider',
-				items: 1,
-				mode: 'carousel',
-				slideBy: 'page',
-				nav: false,
-				controls: true,
-				autoplay: true,
-				autoplayButtonOutput: false,
-				controls: true,
-				gutter: 50,
-				slideBy: 1,
-				edgePadding: 0,
-				center: true,
-				controlsContainer: '#team-nav',
-				autoplayHoverPause: true,
-				loop: true,
-				swipeAngle: false,
-				speed: 700,
-	
-				responsive: {
-					350: {
-						gutter: 10,
-						edgePadding: 0,
-						items: 1,
-					},
-					500: {
-						gutter: 20,
-						edgePadding: 0,
-						items: 1,
-					},
-					700: {
-						gutter: 50,
-						edgePadding: 20,
-						items: 2,
-					},
-					1000: {
-						gutter: 50,
-						edgePadding: 50,
-						items: 2,
-					}
-				}
-	
-			});
-		} */
 
 		if ( testimonialCenter.length> 0 ) {
 			var testimonialSlider = tns({
