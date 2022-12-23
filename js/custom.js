@@ -241,7 +241,20 @@ $('.team-navi').slick({
   
   carousel();
   
- 
+/*------------------
+		Navigation
+	--------------------*/
+	$(".menu-switch").on('click', function () {
+		$('.side-menu-wrapper').addClass('active');
+		$('.menu-wrapper').addClass('hide-left');
+	});
+
+	$(".menu-close").on('click', function () {
+		$('.side-menu-wrapper').removeClass('active');
+		$('.menu-wrapper').removeClass('hide-left');
+	});
+
+  
 // external js: isotope.pkgd.js
 // https://isotope.metafizzy.co/
 
