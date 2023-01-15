@@ -10371,7 +10371,7 @@ a {
 }
 
 .galery {
-  background-color: var(--bs-primary);
+  background-color: #111;
   height: 100% !important;
 }
 
