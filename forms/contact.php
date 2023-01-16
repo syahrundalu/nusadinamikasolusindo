@@ -1,14 +1,14 @@
 <?php 
 //Mail sending function
 $subject = $_POST['name'];
-$receiving_email_address = 'avityproject@gmail.com';
+$receiving_email_address = 'admin@nusa-solusindo.com';
 $from = $_POST['email'];
 
 //data
 $message = $_POST['message'];       
 
-ini_set("SMTP","smtp.hostinger.com");
-ini_set("smtp_port","465");
+ini_set("SMTP","srv163.niagahoster.com");
+ini_set("smtp_port","993");
 
 //Headers
 $headers  = "MIME-Version: 1.0\r\n";

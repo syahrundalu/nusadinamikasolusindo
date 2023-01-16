@@ -181,11 +181,14 @@ $('.team-navi').slick({
 	dots: false,
 	infinite: true,
 	speed: 1000,
+	centerMode: true,
 	autoplay: true,
 	autoplaySpeed: 3000,
 	slidesToShow: 1,
 	slidesToScroll: 1,
-	arrows: true,
+	arrows: false,
+	fade: true,
+    asNavFor: '.team-dot',
 	prevArrow: '<button type=\'button\' class=\'prevArrow\'><i class=\'icon-chevron-left\'></i></button>',
 	nextArrow: '<button type=\'button\' class=\'nextArrow\'><i class=\'icon-chevron-right\'></i></button>',
 	responsive: [{
@@ -210,6 +213,17 @@ $('.team-navi').slick({
 		}
 	  }
 	]
+  });
+
+  $('.team-dot').slick({
+	slidesToShow: 3,
+	slidesToScroll: 1,
+	asNavFor: '.team-navi',
+	dots: false,
+	centerMode: true,
+	focusOnSelect: true,
+	prevArrow: '<button type=\'button\' class=\'prevArrow\'><i class=\'icon-chevron-left\'></i></button>',
+	nextArrow: '<button type=\'button\' class=\'nextArrow\'><i class=\'icon-chevron-right\'></i></button>'
   });
 
   $.js = function (el) {
