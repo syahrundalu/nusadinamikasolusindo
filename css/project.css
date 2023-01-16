@@ -376,7 +376,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
 
+.infos .slider-nav .team.dot:active{
+  box-shadow: 14px 0px 103px rgba(0, 0, 0, 0.096);
 }
 
 
