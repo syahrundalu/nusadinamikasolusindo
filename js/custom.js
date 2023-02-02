@@ -223,7 +223,14 @@ $('.team-navi').slick({
 	centerMode: true,
 	focusOnSelect: true,
 	prevArrow: '<button type=\'button\' class=\'prevArrow\'><i class=\'icon-chevron-left\'></i></button>',
-	nextArrow: '<button type=\'button\' class=\'nextArrow\'><i class=\'icon-chevron-right\'></i></button>'
+	nextArrow: '<button type=\'button\' class=\'nextArrow\'><i class=\'icon-chevron-right\'></i></button>',
+	responsive: [{
+		breakpoint: 757,
+		settings: {
+		  slidesToShow: 2,
+		  slidesToScroll: 1
+		}
+	  }]
   });
 
   $.js = function (el) {

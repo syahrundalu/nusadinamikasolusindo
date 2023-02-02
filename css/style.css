@@ -9160,7 +9160,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  color: #7a7a7a;
+  color: #000000;
   line-height: 1.6; }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, .logo {
@@ -9521,6 +9521,8 @@ a {
   border-radius: 10px;
   padding: 50px 20px;
   transition: .3s all ease;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .custom-card:hover{
