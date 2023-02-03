@@ -10384,7 +10384,7 @@ a {
 }
 
 .galery {
-  background-color: #111;
+  background: linear-gradient(to bottom right, rgba(6, 39, 78), rgba(18, 67, 126));
   height: 100% !important;
 }
 

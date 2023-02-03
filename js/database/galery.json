@@ -1,0 +1,43 @@
+{
+    "images": [
+      {
+        "src": "images/projects/SI AP 2.jpg",
+        "tittle": "Soil Investigation Cihapit",
+        "kategori" : "Soil Investigation",
+        "filter" : "soil-investigation"
+        
+      },
+      {
+        "src": "images/projects/SR Jayapura.jpg",
+        "tittle": "Soil Resistivity Jayapura",
+        "kategori" : "Soil Resistivity",
+        "filter" : "engineering-design"        
+      },
+      {
+        "src": "images/projects/SI Bandara Juanda.jpg",
+        "tittle": "Soil Investigation Bandara Juanda",
+        "kategori" : "Soil Investigation",
+        "filter" : "geophysical"
+      },
+      {
+        "src": "images/projects/SR Batubara.jpg",
+        "tittle": "Soil Resistivity Batubara",
+        "kategori" : "Soil Resistivity",
+        "filter" : "engineering-design"
+        
+      },
+      {
+        "src": "images/projects/SI TP Bandara Kualanamu CBR.jpg",
+        "tittle": "Soil Investigation Topographic Bandara Kualanamu CBR",
+        "kategori" : "Soil Investigation Topographic",
+        "filter" : "survey-mapping"        
+      },
+      {
+        "src": "images/projects/SI Cihapit.jpg",
+        "tittle": "Soil Investigation Cihapit",
+        "kategori" : "Soil Investigation",
+        "filter" : "geophysical"
+      }
+    ]
+  }
+  
