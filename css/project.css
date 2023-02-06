@@ -726,7 +726,7 @@
 	height: 100%;
 	right: 0;
 	top: 0;
-  background-color: #000000;
+  background-color: var(--bs-primary);
 	-webkit-box-shadow: 14px 0px 103px rgba(0, 0, 0, 0.08);
 	box-shadow: 14px 0px 103px rgba(0, 0, 0, 0.08);
 	z-index: 999;
