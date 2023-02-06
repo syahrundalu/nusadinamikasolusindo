@@ -782,7 +782,7 @@
 	  </div>
 	  
 	
-	<div class="section sec-contact">
+	<!-- <div class="section sec-contact">
 		<div class="container">			
 			<div class="row mb-5 justify-content-center text-center">
 				<div class="col-lg-5">
@@ -834,7 +834,63 @@
 
 			</form>
 		</div>
-	</div>
+	</div> -->
+
+	<section class="contact-us" id="contact-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-lg-8">
+			  <div id="map" data-aos="fade-up" data-aos-duration="1000">
+			  
+				<!-- You just need to go to Google Maps for your own map point, and copy the embed code from Share -> Embed a map section -->
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.091641282141!2d107.63513331455867!3d-6.879623995028647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e70ec26f4a45%3A0x65d4d8377dbaf6!2sNusa%20Dinamika%20Solusindo%20Engineering!5e0!3m2!1sid!2sid!4v1675691198056!5m2!1sid!2sid" width="100%" height="420px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				
+			  </div>
+			</div>
+			<div class="col-lg-4" data-aos="fade-up" data-aos-duration="2000">
+			  <form id="contact" action="forms/contact.php" method="post" role="form" class="php-email-form">
+				<div class="row">
+				  <div class="col-lg-12">
+					<div class="section-heading">
+					  <h6>Kontak Kami</h6>
+					  <h4>Say <em>Hello</em></h4>
+					  <p>Jika anda memiliki pertanyaan tentang produk kami,
+						anda bisa menghubungi kami disini. kami akan dengan senang hati bisa menjawab setiap pertanyaan anda.</p>
+					</div>
+				  </div>
+				  <div class="col-lg-12">
+					<fieldset>
+					  <input type="name" name="name" id="name" placeholder="Full Name" autocomplete="on" required>
+					</fieldset>
+				  </div>
+				  <div class="col-lg-12">
+					<fieldset>
+					  <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
+					</fieldset>
+				  </div>
+				  <div class="col-lg-12">
+					<fieldset>
+					  <textarea name="message" id="message" placeholder="Your Message"></textarea>
+					</fieldset>
+				  </div>
+				  <div class="col-lg-12">
+					<fieldset>
+					  <button type="submit" id="form-submit" class="main-gradient-button">Kirim Pesan</button>
+					</fieldset>
+				  </div>
+				</div>
+				<div class="my-3">
+				  <div class="loading">Loading</div>
+				  <div class="sent-message">Your message has been sent. Thank you!</div>            
+				  <div class="error-message">Sorry</div>
+				</div>
+			  </form>
+			</div>
+	  
+		  </div>
+		</div>
+		</section>
+	  
 
 	
 
