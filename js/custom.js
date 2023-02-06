@@ -326,17 +326,6 @@ var iso = new Isotope( '.portfolio-container', {
   
   
 
-  if (document.addEventListener) {
-	document.addEventListener('contextmenu', function(e) {
-	  alert("Gunakan Gambar Dengan Bijak, Hubungi Kami Untuk"); //here you draw your own menu
-	  e.preventDefault();
-	}, false);
-  } else {
-	document.attachEvent('oncontextmenu', function() {
-	  alert("yahhh!! mau download gambar yah?");
-	  window.event.returnValue = false;
-	});
-  }
   
    
 
