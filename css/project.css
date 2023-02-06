@@ -13,7 +13,7 @@
   --bs-gray: #6c757d;
   --bs-gray-dark: #343a40;
   --bs-primary: #06274E;
-  --bs-secondary: #6c757d;
+  --bs-secondary: #D8302B;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
@@ -312,10 +312,12 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: var(--bs-primary);
+  background: var(--bs-secondary);
   display: inline-block;
   position: relative;
   color: #fff; 
+  margin-left: -20px;
+  box-shadow: 14px 0px 103px rgba(0, 0, 0, 0.096);
 }
 
 .infos .main-content .widget ul li a span{
@@ -1430,7 +1432,7 @@ section.contact-us ul.social-icons li a:hover {
 
 /*** Features ***/
 .feature-row {
-  background: linear-gradient(to bottom right, rgba(6, 39, 78), rgba(18, 67, 126));
+  background: linear-gradient(to bottom right, rgba(216, 48, 43), rgb(192, 38, 33));
   border-radius: 20px;
   justify-content: center;
   box-shadow: 0 0 45px rgba(0, 0, 0, .08);
@@ -1440,7 +1442,7 @@ section.contact-us ul.social-icons li a:hover {
   align-items: center;
   justify-content: center;
   text-align: center;
-  border-color: rgba(255, 255, 255, 0.03) !important;
+  border-color: rgba(255, 255, 255, 0.11) !important;
 }
 
 .feature-item .box-icon {
@@ -1460,7 +1462,7 @@ section.contact-us ul.social-icons li a:hover {
 
 
 .feature-item i{
-  color: var(--bs-primary);
+  color: var(--bs-secondary);
   font-size: 32px;  
 }
 
