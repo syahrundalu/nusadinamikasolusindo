@@ -174,7 +174,7 @@
 	</div>
 
 	<!-- Features Start -->
-    <div class="container-xxl py-5">
+    <div class="container-xxl py-5" data-aos="fade-up" data-aos-delay="300">
         <div class="container">
             <div class="row g-0 feature-row">
                 <div class="col-md-6 col-lg-3 col-6 wow fadeIn" data-wow-delay="0.1s">
@@ -182,25 +182,27 @@
                         <div class="box-icon btn-square rounded-circle mb-4" style="width: 64px; height: 64px;">
                             <i class="bi bi-briefcase-fill"></i>
                         </div>
-                        <h5 class="mb-3">65</h5>
+                        <h5 class="mb-3 value" akhi="65">0</h5>
                         <p class="mb-0">Project that we already finished</p>
                     </div>
+					
                 </div>
                 <div class="col-md-6 col-lg-3 col-6 wow fadeIn" data-wow-delay="0.3s">
                     <div class="feature-item border h-100 p-5">
                         <div class="box-icon btn-square rounded-circle mb-4" style="width: 64px; height: 64px;">
                             <i class="bi bi-person-lines-fill"></i>
                         </div>
-                        <h5 class="mb-3">30</h5>
+                        <h5 class="mb-3 value" akhi="30"></h5>
                         <p class="mb-0">Our Client that works with us</p>
                     </div>
+					
                 </div>
                 <div class="col-md-6 col-lg-3 col-6 wow fadeIn" data-wow-delay="0.5s">
                     <div class="feature-item border h-100 p-5">
                         <div class="box-icon btn-square rounded-circle mb-4" style="width: 64px; height: 64px;">
                             <i class="bi bi-calendar2-event-fill"></i>
                         </div>
-                        <h5 class="mb-3">6</h5>
+                        <h5 class="mb-3 value" akhi="6"></h5>
                         <p class="mb-0">Years of Company Age</p>
                     </div>
                 </div>
@@ -209,10 +211,34 @@
                         <div class="box-icon btn-square rounded-circle mb-4" style="width: 64px; height: 64px;">
                             <i class="bi bi-people-fill"></i>
                         </div>
-                        <h5 class="mb-3">6</h5>
+                        <h5 class="mb-3 value" akhi="6"></h5>
                         <p class="mb-0">the Tottal of People in Our Team</p>
                     </div>
                 </div>
+
+				<script>
+					const counters = document.querySelectorAll('.value');
+					const speed = 50;
+
+					counters.forEach( counter => {
+					const animate = () => {
+						const value = +counter.getAttribute('akhi');
+						const data = +counter.innerText;
+						
+						const time = value / speed;
+						if(data < value) {
+							counter.innerText = Math.ceil(data + time);
+							setTimeout(animate, 150);
+							}else{
+							counter.innerText = value;
+							}
+						
+					}
+					
+					animate();
+					});
+
+				</script>
                
             </div>
         </div>
@@ -356,12 +382,7 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 		
 		<div id="carouselExampleIndicators" class="carousel slide carousel-fade shadow-lg" data-bs-ride="carousel" data-aos="fade-up">
-			<ol class="carousel-indicators">
-				<li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-				<li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-				<li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
-				<li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></li>
-			</ol>
+			
 			<div class="carousel-inner">
 				<div class="carousel-item active">
 					<img class="d-block w-100" src="images/project-visual/Soil-Investigation.jpg" alt="First Slide">
@@ -1081,6 +1102,7 @@
 	<script src="js/burgermenu.js"></script>
 	<script src="js/project.js"></script>
 	<script src="js/php-email-form/validate.js"></script>
+	<script src="js/countUp.min.js"></script>
 
 
 	<script src="js/owl.carousel.min.js"></script>
