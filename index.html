@@ -945,7 +945,7 @@
 			  <div id="map" data-aos="fade-up" data-aos-duration="1000">
 			  
 				<!-- You just need to go to Google Maps for your own map point, and copy the embed code from Share -> Embed a map section -->
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.091641282141!2d107.63513331455867!3d-6.879623995028647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e70ec26f4a45%3A0x65d4d8377dbaf6!2sNusa%20Dinamika%20Solusindo%20Engineering!5e0!3m2!1sid!2sid!4v1675691198056!5m2!1sid!2sid" width="100%" height="520px" style="border:0; border-radius: 10px; filter: invert(90%);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.091641282141!2d107.63513331455867!3d-6.879623995028647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e70ec26f4a45%3A0x65d4d8377dbaf6!2sNusa%20Dinamika%20Solusindo%20Engineering!5e0!3m2!1sid!2sid!4v1675691198056!5m2!1sid!2sid" width="100%" height="520px" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 				
 			  </div>
 			</div>
@@ -1107,7 +1107,34 @@
 
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="http://iprodev.github.io/Scrollax.js/lib/scrollax.min.js"></script>
-	
+	<script>
+		
+		function scrollHandler(event) {
+  // prevent the default scroll behavior
+  event.preventDefault();
+  
+  // calculate the current scroll position and container height
+  const container = document.querySelector('.section');
+  const currentPosition = container.scrollTop;
+  const containerHeight = container.offsetHeight;
+  
+  // calculate the snapping point
+  const snapHeight = 200; // adjust this value to change the snapping interval
+  const snapIndex = Math.round(currentPosition / snapHeight);
+  const snapPosition = snapIndex * snapHeight;
+  
+  // scroll to the snapping position using the scrollTo() function
+  container.scrollTo({
+    top: snapPosition,
+    behavior: 'smooth'
+  });
+}
+
+document.addEventListener('mousewheel', scrollHandler);
+document.addEventListener('touchmove', scrollHandler);
+
+
+	</script>
 
 
 

@@ -323,9 +323,3 @@ var iso = new Isotope( '.portfolio-container', {
 	  event.target.classList.add('is-checked');
 	});
   }
-
-
-
-  
-   
-
